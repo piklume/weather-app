@@ -1,0 +1,7 @@
+const CountryActionTypes = {
+    FETCH_COUNTRY_START: 'FETCH_COUNTRY_START',
+    FETCH_COUNTRY_SUCCESS: 'FETCH_COUNTRY_SUCCESS',
+    FETCH_COUNTRY_FAILURE: 'FETCH_COUNTRY_FAILURE'
+};
+
+export default CountryActionTypes;
