@@ -7,3 +7,7 @@ export const selectCountryValues = createSelector(
     country => country.countryInfo
 );
 
+export const selectWeatherValues = createSelector(
+    [selectCountry],
+    country => country.countryWeather
+);

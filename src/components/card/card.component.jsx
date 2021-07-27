@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard({ CountryName,Capital,Population,LatLong,CountryFlag }) {
+export default function MediaCard({ CountryName,Capital,Population,LatLong,CountryFlag,handelClick }) {
     // console.log('In Media card - ',CountryName,Capital,Population,LatLong,CountryFlag);
   const classes = useStyles();
 
@@ -41,16 +41,13 @@ export default function MediaCard({ CountryName,Capital,Population,LatLong,Count
                     {`Population - ${Population}`}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    {`Latitude/Longiture - ${LatLong[0]},${LatLong[1]}`}
+                    {`Latitude / Longitude - ${LatLong[0]},${LatLong[1]}`}
                 </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                Share
-                </Button>
-                <Button size="small" color="primary">
-                Learn More
+                <Button size="small" color="primary" onClick={handelClick}>
+                See Weather
                 </Button>
             </CardActions>
             </Card>
